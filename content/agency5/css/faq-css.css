@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #ffcf00; /* Yellow */
+    --secondary-color: #000000; /* Black */
+    --background-color: #FFFFFF; /* White */
+    --header-color: #767676; /* Maroon */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: var(--header-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.faq-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    margin-left: 10;
+}
+
+.faq {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-question {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+.faq.active .faq-answer {
+    display: block;
+}
